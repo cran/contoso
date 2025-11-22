@@ -1,7 +1,7 @@
 Package: contoso
 Type: Package
 Title: Dataset of the 'Contoso' Company
-Version: 1.1.1
+Version: 1.2.0
 Authors@R: c(
     person(
       "Alejandro", "Hagan",
@@ -22,15 +22,15 @@ Imports: DBI, dplyr, cli, duckdb (>= 1.4.0)
 Suggests: testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Depends: R (>= 4.1.0)
 URL: https://usrbinr.github.io/contoso/,
         https://github.com/usrbinr/contoso
 Config/testthat/edition: 3
 BugReports: https://github.com/usrbinr/contoso/issues
 NeedsCompilation: no
-Packaged: 2025-11-09 02:23:30 UTC; hagan
+Packaged: 2025-11-22 18:48:11 UTC; hagan
 Author: Alejandro Hagan [aut, cre]
 Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
 Repository: CRAN
-Date/Publication: 2025-11-12 21:00:15 UTC
+Date/Publication: 2025-11-22 19:00:06 UTC

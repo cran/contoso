@@ -30,7 +30,7 @@ The package comes with the following tables:
 - **fx**:
   - Contains foreign exchange rate data, mapping currency pairs to their
     exchange rates on specific dates.
-- **date**:
+- **calendar**:
   - Contains date-related information, including date, week, month,
     quarter, and year for use in time-based analysis.
 - **orders**:
@@ -78,12 +78,11 @@ The relationship keys that join each of the tables are listed below.
 
 ### Installation
 
-You can install the development version of package from
-[GitHub](https://github.com/usrbinr/contoso) with:
+You can install the package from CRAN or the development version from
+[GitHub](https://github.com/usrbinr/contoso):
 
 ``` r
-# install.packages("pak")
-pak::pak("usrbinr/contoso")
+install.packages("contoso")
 ```
 
 ### Example
