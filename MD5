@@ -1,10 +1,10 @@
-6b90d1901d539dd2ade67cc9c4ce4b67 *DESCRIPTION
+895f65851ec619742f75c378a4b1d4ce *DESCRIPTION
 05b24a40c084465594457efe510282c5 *LICENSE
 2247f15c8b5431e6405b077cb12efaaf *NAMESPACE
-63ab6d5a7c34faccf65999ee632316d5 *NEWS.md
+a90a270c82f235a90a61598be3dcc545 *NEWS.md
 84747efe2c5d5dbc578545792a667bc2 *R/data.R
-936bbb42308062ad36652bf7a0eade2f *R/database.R
-406c3f2a74e02092d526aede8c3e1ff9 *README.md
+fa980c394af681ecc1955bb8211fadca *R/database.R
+4dc8f09891d19fafa570940ddf8076c0 *README.md
 aee800ef68818fd0ed194ac1727a17b8 *data/calendar.rda
 ed692664dfcacd5ff248cb023256c142 *data/customer.rda
 93ac8bb3d38fe96a5a95028224af7841 *data/fx.rda
@@ -15,7 +15,7 @@ ea86280330175a4b31fb2c93cb5112d1 *data/product.rda
 314239dc2f600be09852c0d550f854d2 *data/store.rda
 cbc9c59880303edb7443e1a9fb3d3569 *inst/CITATION
 7030d2f8eebb194df6e11cbf8f67686d *man/calendar.Rd
-cca278e29d7b4e2cd7e819e055398f15 *man/create_contoso_duckdb.Rd
+e847a6a2f1171d7d94f2d2184843e672 *man/create_contoso_duckdb.Rd
 e2e4f2df519be5dc26fb12aabf26a0fa *man/customer.Rd
 7091234b200022fb2fa0a4172cd093a8 *man/figures/contoso.svg
 285397d2e5e610006166be1d423ef073 *man/figures/logo.png
@@ -27,4 +27,4 @@ bec682e0fbcd6332ff8575513d2161bc *man/orders.Rd
 becbe52b8096f84b5eb35ee530dd2d2a *man/sales.Rd
 45ce9dfced4b6fa99a9ea2941c514fed *man/store.Rd
 cb64544d0d900a89cf32969eb8720eb2 *tests/testthat.R
-2d3a9b27d56c3217c33de53ef45b0418 *tests/testthat/test-create_duckdb_database.R
+00a9316905dfe99e5eba7f717634e938 *tests/testthat/test-create_duckdb_database.R

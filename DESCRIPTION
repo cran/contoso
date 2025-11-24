@@ -1,7 +1,7 @@
 Package: contoso
 Type: Package
 Title: Dataset of the 'Contoso' Company
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: c(
     person(
       "Alejandro", "Hagan",
@@ -19,7 +19,7 @@ Description: A collection of synthetic datasets simulating sales transactions fr
   This dataset is ideal for practicing data analysis, performing time-series analysis, creating reports, or simulating business intelligence scenarios.
 License: MIT + file LICENSE
 Imports: DBI, dplyr, cli, duckdb (>= 1.4.0)
-Suggests: testthat (>= 3.0.0)
+Suggests: testthat (>= 3.0.0), dbplyr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
@@ -29,8 +29,8 @@ URL: https://usrbinr.github.io/contoso/,
 Config/testthat/edition: 3
 BugReports: https://github.com/usrbinr/contoso/issues
 NeedsCompilation: no
-Packaged: 2025-11-22 18:48:11 UTC; hagan
+Packaged: 2025-11-23 17:58:30 UTC; hagan
 Author: Alejandro Hagan [aut, cre]
 Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
 Repository: CRAN
-Date/Publication: 2025-11-22 19:00:06 UTC
+Date/Publication: 2025-11-24 08:10:14 UTC
