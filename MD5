@@ -1,10 +1,10 @@
-895f65851ec619742f75c378a4b1d4ce *DESCRIPTION
+0078e7436c28e0564719f2ea990ed2be *DESCRIPTION
 05b24a40c084465594457efe510282c5 *LICENSE
 2247f15c8b5431e6405b077cb12efaaf *NAMESPACE
-a90a270c82f235a90a61598be3dcc545 *NEWS.md
+5a7ee7eafe3d17eafc1d184f39cd5902 *NEWS.md
 84747efe2c5d5dbc578545792a667bc2 *R/data.R
-fa980c394af681ecc1955bb8211fadca *R/database.R
-4dc8f09891d19fafa570940ddf8076c0 *README.md
+6cf7e8e20981597fffa0e63219f65a1e *R/database.R
+f8ae3e848fa61c975d169448d162afcf *README.md
 aee800ef68818fd0ed194ac1727a17b8 *data/calendar.rda
 ed692664dfcacd5ff248cb023256c142 *data/customer.rda
 93ac8bb3d38fe96a5a95028224af7841 *data/fx.rda
@@ -18,6 +18,7 @@ cbc9c59880303edb7443e1a9fb3d3569 *inst/CITATION
 e847a6a2f1171d7d94f2d2184843e672 *man/create_contoso_duckdb.Rd
 e2e4f2df519be5dc26fb12aabf26a0fa *man/customer.Rd
 7091234b200022fb2fa0a4172cd093a8 *man/figures/contoso.svg
+2bed13170689b44cb9113b826162c88c *man/figures/contoso_water_color.jpg
 285397d2e5e610006166be1d423ef073 *man/figures/logo.png
 feac2e7177a124e82b83abff482f96df *man/fx.Rd
 f7e65ebb626747697eb9ba94507e46d0 *man/launch_ui.Rd
