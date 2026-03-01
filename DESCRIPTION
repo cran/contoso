@@ -1,7 +1,7 @@
 Package: contoso
 Type: Package
 Title: Dataset of the 'Contoso' Company
-Version: 2.0.0
+Version: 2.1.0
 Authors@R: c(
     person(
       "Alejandro", "Hagan",
@@ -18,19 +18,18 @@ Description: A collection of synthetic datasets simulating sales transactions fr
   - "calendar": A time-based table that includes date-related attributes like year, month, quarter, day, and working day indicators.
   This dataset is ideal for practicing data analysis, performing time-series analysis, creating reports, or simulating business intelligence scenarios.
 License: MIT + file LICENSE
-Imports: DBI, dplyr, cli, duckdb (>= 1.4.0), assertthat
-Suggests: testthat (>= 3.0.0), dbplyr
+Imports: DBI, dplyr, cli, duckdb (>= 1.4.0), purrr
+Suggests: testthat (>= 3.0.0), dbplyr, gt
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.3
-Depends: R (>= 3.5)
-URL: https://usrbinr.github.io/contoso/,
-        https://github.com/usrbinr/contoso
+Depends: R (>= 4.1.0)
+URL: https://codeberg.org/usrbinr/contoso
 Config/testthat/edition: 3
-BugReports: https://github.com/usrbinr/contoso/issues
+BugReports: https://codeberg.org/usrbinr/contoso/issues
 NeedsCompilation: no
-Packaged: 2026-02-04 04:45:22 UTC; hagan
+Packaged: 2026-03-01 02:14:31 UTC; hagan
 Author: Alejandro Hagan [aut, cre]
 Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
 Repository: CRAN
-Date/Publication: 2026-02-04 05:00:02 UTC
+Date/Publication: 2026-03-01 03:30:08 UTC
