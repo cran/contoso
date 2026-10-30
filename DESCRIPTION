@@ -1,7 +1,7 @@
 Package: contoso
 Type: Package
 Title: Dataset of the 'Contoso' Company
-Version: 2.1.0
+Version: 2.4.0
 Authors@R: c(
     person(
       "Alejandro", "Hagan",
@@ -16,20 +16,21 @@ Description: A collection of synthetic datasets simulating sales transactions fr
   - "orders": Contains details about customer orders, including order and delivery dates, store, and customer data.
   - "product": Contains data on products, including attributes such as product name, category, price, cost, and weight.
   - "calendar": A time-based table that includes date-related attributes like year, month, quarter, day, and working day indicators.
+  The package also includes 1,127 fictional internal business reports (weekly sales flashes, monthly reviews, regional reviews, pricing committee minutes, annual operating plans and industry notes) written about the trading from 2016 to 2025 in the larger cloud dataset, with a glossary of the terms they use, for building and testing document search and financial planning and analysis workflows with large language models.
   This dataset is ideal for practicing data analysis, performing time-series analysis, creating reports, or simulating business intelligence scenarios.
 License: MIT + file LICENSE
-Imports: DBI, dplyr, cli, duckdb (>= 1.4.0), purrr
-Suggests: testthat (>= 3.0.0), dbplyr, gt
+Imports: DBI, dplyr, cli, duckdb (>= 1.4.0), purrr, tibble, yaml12
+Suggests: testthat (>= 3.0.0), withr, dbplyr, yaml, knitr, quarto
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.3
 Depends: R (>= 4.1.0)
 URL: https://codeberg.org/usrbinr/contoso
 Config/testthat/edition: 3
 BugReports: https://codeberg.org/usrbinr/contoso/issues
+Config/roxygen2/version: 8.0.0
 NeedsCompilation: no
-Packaged: 2026-03-01 02:14:31 UTC; hagan
+Packaged: 2026-10-30 01:18:12 UTC; hagan
 Author: Alejandro Hagan [aut, cre]
 Maintainer: Alejandro Hagan <alejandro.hagan@outlook.com>
 Repository: CRAN
-Date/Publication: 2026-03-01 03:30:08 UTC
+Date/Publication: 2026-10-30 03:50:02 UTC

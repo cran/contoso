@@ -45,10 +45,26 @@ The package comes with the following tables:
   - Contains detailed line items for each order, including product key,
     quantity, and price for each item in the order.
 
-Built into the package is the 10K row version of the dataset.
+Built into the package is the smallest version of the dataset: 7,794
+sales lines across 3,242 orders and 3,165 customers.
 
-Using `view()`, you can see the columns’ label using the
-[labelled](https://larmarange.github.io/labelled/index.html) package.
+Every column is documented in a machine-readable
+[data-dict](https://data-dict.tidyverse.org/) dictionary, shipped with
+the package. There is one per dataset, each in its own directory:
+`extdata/small/` describes the bundled tables (and `size = "small"`),
+`extdata/cloud/` describes the `medium`, `large` and `mega` sizes.
+
+``` r
+system.file("extdata", "small", "data-dict.yaml", package = "contoso")
+```
+
+Both validate against the spec, so the [`data-dict`
+CLI](https://data-dict.tidyverse.org/) can check either against its
+data, or render it as a browsable page. Point it at the directory:
+
+Using `labelled::look_for()`, you can also see the columns’ labels from
+the [labelled](https://larmarange.github.io/labelled/index.html)
+package.
 
 > Inspiration to using
 > [labelled](https://larmarange.github.io/labelled/index.html) comes
@@ -58,12 +74,22 @@ Using `view()`, you can see the columns’ label using the
 For larger datasets, use `create_contoso_duckdb()` with one of the
 following sizes:
 
-| Size   | Approx Sales Rows |
-|--------|-------------------|
-| small  | ~8,000            |
-| medium | ~2.3 million      |
-| large  | ~47 million       |
-| mega   | ~237 million      |
+| Size   | Sales Rows  |
+|--------|-------------|
+| small  | 7,794       |
+| medium | 2,349,091   |
+| large  | 23,719,935  |
+| mega   | 237,245,485 |
+
+Column names and types are identical across all four sizes; only the row
+counts differ.
+
+## Data Storage
+
+The larger datasets are stored as Parquet files on Cloudflare R2 cloud
+storage and streamed directly into DuckDB via the public URL:
+
+    https://pub-6aa63519a4b945948cb8c88949b320ca.r2.dev
 
 ## Source
 
@@ -78,7 +104,7 @@ github site
 The relationship keys that join each of the tables are listed below.
 
 | sales | customer | product | store | order | orderrows | fx |
-|----|----|----|----|----|----|----|
+|:---|:---|:---|:---|:---|:---|:---|
 | order_key |  |  |  | order_key | order_key |  |
 | customer_key | customer_key |  |  | customer_key |  |  |
 | store_key |  |  | store_key | store_key |  |  |
@@ -97,8 +123,8 @@ Or install the development version from
 [Codeberg](https://codeberg.org/usrbinr/contoso):
 
 ``` r
-# install.packages("pak")
-pak::pak("git::https://codeberg.org/usrbinr/contoso")
+# install.packages("remotes")
+remotes::install_git("https://codeberg.org/usrbinr/contoso")
 ```
 
 ### Example
@@ -118,3 +144,23 @@ launch_ui(db$con)
 # Clean up when done
 DBI::dbDisconnect(db$con, shutdown = TRUE)
 ```
+
+### Business reports
+
+The package also ships 1,127 fictional internal business reports about
+Contoso’s trading from May 2016 to the end of 2025: weekly sales
+flashes, monthly e-commerce, supply chain and plant reviews, quarterly
+regional reviews, pricing committee minutes, operations notices,
+industry notes and each year’s Annual Operating Plan, with a glossary of
+the terms they use. Their figures come from the “mega” dataset, and a
+few contain deliberate errors, for testing document search and FP&A
+assistants.
+
+``` r
+reports <- read_reports() # one row per report, Markdown text in `body`
+export_reports("contoso-reports") # or write them as one YAML file each
+```
+
+See the “Business reports” and “Searching the reports with ragnar”
+articles on the [package
+website](https://usrbinr.codeberg.page/contoso/).
